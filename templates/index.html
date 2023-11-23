@@ -1,0 +1,40 @@
+
+<!-- templates/index.html -->
+<head>
+    <title>Diabetes Prediction</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+</head>
+<!-- templates/index.html -->
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Diabetes Prediction</title>
+</head>
+<body>
+    <h1>Diabetes Prediction</h1>
+    <form method="post" action="/predict">
+        <label for="pregnancies">Number of Pregnancies:</label>
+        <input type="number" name="pregnancies" id="pregnancies" required><br>
+
+        <label for="glucose">Glucose Level:</label>
+        <input type="number" name="glucose" id="glucose" required><br>
+
+        <label for="blood_pressure">Blood Pressure:</label>
+        <input type="number" name="blood_pressure" id="blood_pressure" required><br>
+
+        <label for="skin_thickness">Skin Thickness:</label>
+        <input type="number" name="skin_thickness" id="skin_thickness" required><br>
+
+        <label for="insulin">Insulin Level:</label>
+        <input type="number" name="insulin" id="insulin" required><br>
+
+        <label for="bmi">BMI:</label>
+        <input type="number" name="bmi" id="bmi" required><br>
+
+        <label for="dpf">Diabetes Pedigree Function:</label>
+        <input type="number" name="dpf" id="dpf" required><br>
+
+        <input type="submit" value="Predict">
+    </form>
+</body>
+</html>
